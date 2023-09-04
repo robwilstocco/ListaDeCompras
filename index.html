@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <title>Lista de Compras</title>
+</head>
+<body class="container">
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Lista de Compras</h1>
+    </header>
+    <section class="content">
+        <div id="addCard" class="content__card ">
+            <h2 class="content__card__titulo">Adicionar item</h2>
+            <div class="content__card__input">
+                <label for="descricao">Descrição:</label>
+                <input id="descricao" type="text">
+            </div>
+            <div class="content__card__input">
+                <label for="quantidade">Quantidade:</label>
+                <input id="quantidade" type="text">
+            </div>
+            <button id="addBtn" class="content__card__button">+</button>
+        </div>
+        <div id="listCard" class="content__card hidden">
+            <h2 class="content__card__titulo">Lista de Itens</h2>
+                <div>
+                    <ul>
+                        <li class="content__card__list__titulo">
+                            <p> </p>
+                            <h3>Descrição</h3>
+                            <h3>Quantidade</h3>
+                        </li>
+                    </ul>
+                    <ul class="content__card__list"> </ul>
+                </div>
+            <button id="clearBtn" class="content__card__button">Limpar</button>
+        </div>
+    </section>
+    <aside>
+        <ul class="menu">
+            <li id="createBtn" class="menu__item active">Criar Lista</li>
+            <li id="listBtn" class="menu__item">Minha Lista</li>
+        </ul>
+    </aside>    
+</body>
+</html>
